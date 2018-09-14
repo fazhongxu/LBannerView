@@ -10,9 +10,10 @@
 
 ### 效果图
 
-![image](https://github.com/fazhongxu/IBannerView/blob/master/images/banner_below.png)
+<div class = "aaaa" width = 100%>
+<img src="https://github.com/fazhongxu/IBannerView/blob/master/images/banner_below.png" width="80%" height="30%">
 
-![image](https://github.com/fazhongxu/IBannerView/blob/master/images/banner_cover.png)
+<img src="https://github.com/fazhongxu/IBannerView/blob/master/images/banner_cover.png" width="80%" height="30%">
 
-![image](https://github.com/fazhongxu/IBannerView/blob/master/images/screenshot_below.png)
-
+<img src="https://github.com/fazhongxu/IBannerView/blob/master/images/screenshot_below.png" width="50%" height="50%" margin:0 auto>
+</div>
