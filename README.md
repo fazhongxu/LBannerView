@@ -10,8 +10,10 @@
 
 ### 效果图
 
+<div class = "aaaa">
 <img src="https://github.com/fazhongxu/IBannerView/blob/master/images/banner_below.png" width="50%" height="50%">
 
 <img src="https://github.com/fazhongxu/IBannerView/blob/master/images/banner_cover.png" width="50%" height="50%">
 
-<img src="https://github.com/fazhongxu/IBannerView/blob/master/images/screenshot_below.png" width="50%" height="50%" margin:0 auto>
+<img src="https://github.com/fazhongxu/IBannerView/blob/master/images/screenshot_below.png" width="50%" height="50%" margin:0,auto>
+</div>
