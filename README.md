@@ -7,3 +7,12 @@
 #### 其二 也是项目需求，图片左右两边突出 类似效果一页看到左右突出（一页显示三张图，两边的图漏出一些图片）
 
 #### 其三 就是这个框架了，哈哈
+
+### 效果图
+
+![image](https://github.com/fazhongxu/IBannerView/blob/master/images/banner_below.png)
+
+![image](https://github.com/fazhongxu/IBannerView/blob/master/images/banner_cover.png)
+
+![image](https://github.com/fazhongxu/IBannerView/blob/master/images/screenshot_below.png)
+
