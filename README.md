@@ -10,7 +10,7 @@
 
 ### 效果图
 
-<div class = "aaaa">
+<div class = "aaaa" width = 100%>
 <img src="https://github.com/fazhongxu/IBannerView/blob/master/images/banner_below.png" width="50%" height="50%">
 
 <img src="https://github.com/fazhongxu/IBannerView/blob/master/images/banner_cover.png" width="50%" height="50%">
