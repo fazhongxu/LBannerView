@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <!--小点覆盖在图片上-->
+    <json.xxl.com.lbannerview.BannerView
+        android:id="@+id/banner_view"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:bottomColor="@drawable/shape_item_divider"
+        app:dotGravity="right"
+        app:dotIndicatorFocus="@color/colorPrimary"
+        app:dotIndicatorNormal="@color/colorGray"
+        app:widthProportion="8"
+        app:heightProportion="3"
+        app:bulge="false"
+        app:bottomType="coverPic"
+        app:dotSize="10dp" />
+
+    <!--小点在图片下方-->
+    <json.xxl.com.lbannerview.BannerView
+        android:layout_marginTop="20dp"
+        android:id="@+id/banner_view_below"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:bottomColor="@color/transparent"
+        app:dotGravity="center"
+        app:dotIndicatorFocus="@color/colorPrimary"
+        app:dotIndicatorNormal="@color/colorGray"
+        app:widthProportion="8"
+        app:heightProportion="3"
+        app:bulge="true"
+        app:bulgeDistance="30"
+        app:bottomType="belowPic"
+        app:dotSize="10dp" />
+</LinearLayout>

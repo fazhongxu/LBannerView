@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#159BA4</color>
+    <color name="colorPrimaryDark">#159BA4</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="colorGray">#FFD4D4D4</color>
+    <color name="transparentGray">#55757575</color>
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+
+    <color name="gray">#D1D2D6</color>
+
+    <color name="triangle">#AA72D572</color>
+    <color name="circle">#AA738FFE</color>
+    <color name="square">#AAE84E40</color>
+
+    <color name="yellow">#FFFF00</color> <!--黄色 -->
+
+    <color name="pink">#FFC0CB</color> <!--粉红色 -->
+
+    <color name="darkorange">#FF8C00</color> <!--暗桔黄色 -->
+
+    <color name="hotpink">#FF69B4</color> <!--热粉红色 -->
+
+
+    <color name="wheat">#F5DEB3</color> <!--浅黄色 -->
+
+    <color name="lightcoral">#F08080</color> <!--亮珊瑚色 -->
+    <color name="palegoldenrod">#EEE8AA</color> <!--苍麒麟色 -->
+    <color name="violet">#EE82EE</color> <!--紫罗兰色 -->
+    <color name="darksalmon">#E9967A</color> <!--暗肉色 -->
+    <color name="paleturquoise">#AFEEEE</color> <!--苍宝石绿 -->
+    <color name="greenyellow">#ADFF2F</color> <!--黄绿色 -->
+    <color name="lightblue">#ADD8E6</color> <!--亮蓝色 -->
+    <color name="aquamarine">#7FFFD4</color> <!--碧绿色 -->
+    <color name="aqua">#00FFFF</color> <!--浅绿色 -->
+    <color name="teal">#008080</color> <!--水鸭色 -->
+    <color name="darkgreen">#006400</color><!--暗绿色 -->
+    <color name="transparent">#00000000</color>
+
+    <!--颜色组-->
+    <integer-array name="load_view_color">
+        <item>@color/yellow</item>
+        <item>@color/darksalmon</item>
+        <item>@color/paleturquoise</item>
+        <item>@color/aquamarine</item>
+        <item>@color/teal</item>
+        <item>@color/hotpink</item>
+    </integer-array>
+
+    <color name="color_999">#999999</color>
+
+</resources>

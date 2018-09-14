@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="BannerView">
+        <!--点选中的颜色-->
+        <attr name="dotIndicatorFocus" format="color|reference" />
+        <!--点未选中颜色-->
+        <attr name="dotIndicatorNormal" format="color|reference" />
+        <!--点的大小-->
+        <attr name="dotSize" format="dimension" />
+        <!--点的距离-->
+        <attr name="dotDistance" format="dimension" />
+        <!--点的位置-->
+        <attr name="dotGravity" format="enum">
+            <!--居中-->
+            <enum name="center" value="0" />
+            <!--右边-->
+            <enum name="right" value="1" />
+            <!--左边-->
+            <enum name="left" value="-1" />
+        </attr>
+        <!--底部背景颜色-->
+        <attr name="bottomColor" format="color|reference" />
+        <!--宽度比-->
+        <attr name="widthProportion" format="float" />
+        <!--高度比-->
+        <attr name="heightProportion" format="float" />
+        <!--是否两边突出条目 实现一屏显示多个View的效果-->
+        <attr name="bulge" format="boolean"/>
+        <!--两边凸出距离-->
+        <attr name="bulgeDistance" format="integer"/>
+        <!--底部模式 小点 文字描述位置 覆盖在图片上 在整个图片下方-->
+        <attr name="bottomType" format="enum">
+            <!--底部覆盖图片-->
+            <enum name="coverPic" value="0"/>
+            <!--底部在图片下方-->
+            <enum name="belowPic" value="1"/>
+        </attr>
+    </declare-styleable>
+</resources>
