@@ -12,7 +12,7 @@
 
 ![image](https://github.com/fazhongxu/IBannerView/blob/master/images/banner_below.png) {:width="200px" height="200px"}
 
-![image](https://github.com/fazhongxu/IBannerView/blob/master/images/banner_cover.png)
+![image](https://github.com/fazhongxu/IBannerView/blob/master/images/banner_cover.png){:width="200px" height="220px"}
 
 ![image](https://github.com/fazhongxu/IBannerView/blob/master/images/screenshot_below.png)
 
