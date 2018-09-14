@@ -16,3 +16,5 @@
 
 ![image](https://github.com/fazhongxu/IBannerView/blob/master/images/screenshot_below.png)
 
+<img src="https://github.com/fazhongxu/IBannerView/blob/master/images/screenshot_below.png />
+
