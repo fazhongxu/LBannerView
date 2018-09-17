@@ -31,7 +31,7 @@
 
 ```
     dependencies {
-       	        implementation 'com.github.fazhongxu:LBannerView:v0.1.0'
+       	        依赖库在调试
 	}
 ```
 
