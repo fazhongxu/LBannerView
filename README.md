@@ -8,6 +8,54 @@
 
 #### 其三 就是这个框架了，哈哈
 
+        
+#### 自定义属性含义
+
+    property | means
+    
+    
+    
+### Dependency
+
+#### Step 1. Add the JitPack repository to your build file
+    
+```
+        allprojects {
+                repositories {
+                    ...
+                    maven { url 'https://jitpack.io' }
+                }
+            }
+```
+#### Step 2. Add the dependency
+
+```
+    dependencies {
+       	        implementation 'com.github.fazhongxu:LBannerView:v0.1.0'
+	}
+```
+
+
+
+#### 布局文件使用
+
+    <json.xxl.com.lbannerview.BannerView
+        android:layout_marginTop="20dp"
+        android:id="@+id/banner_view_below"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:bottomColor="@color/transparent"
+        app:dotGravity="center"
+        app:dotIndicatorFocus="@color/colorPrimary"
+        app:dotIndicatorNormal="@color/colorGray"
+        app:widthProportion="8"
+        app:heightProportion="3"
+        app:bulge="true"
+        app:bulgeDistance="30"
+        app:bottomType="belowPic"
+        app:dotSize="10dp" />
+        
+
 ### 效果图
 
 
