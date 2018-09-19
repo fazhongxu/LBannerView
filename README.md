@@ -191,6 +191,9 @@
                 })
             }
         }
+        
+         banner_view_below.changeDuration(1200)  // 改变轮播速率
+         banner_view_below.startScroll()   //开启自动滚动
 ```
 
 #### 备注 依赖的 implementation 'com.github.fazhongxu:LBannerView:v0.1.6' 必须大于 v0.1.6 ,v0.1.6 作者在调试开源依赖 v0.1.6 是第一个完整的可用的版本
@@ -202,8 +205,6 @@
 
 #### 不用调用代码停止轮播，不用担心内存泄漏问题，已经自动处理好了，详情看源码
 
-### 用的上就麻烦给个 star 吧
-
 ### 效果图
 
 
@@ -212,3 +213,5 @@
 
 <img src="https://github.com/fazhongxu/IBannerView/blob/master/images/screenshot_below.png" width="50%" height="50%" margin:0 auto>
 
+
+### 用的上就麻烦给个 star 吧
