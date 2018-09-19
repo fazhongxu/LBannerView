@@ -49,7 +49,7 @@
 
 ```
     dependencies {
-       	     implementation 'com.github.fazhongxu:LBannerView:v0.1.5'
+       	     implementation 'com.github.fazhongxu:LBannerView:v0.1.6'
 
 	}
 ```
@@ -193,6 +193,7 @@
         }
 ```
 
+#### 备注 依赖的 implementation 'com.github.fazhongxu:LBannerView:v0.1.6' 必须大于 v0.1.6 ,v0.1.6 作者在调试开源依赖 v0.1.6 是第一个完整的可用的版本
 
 #### 
 
