@@ -62,6 +62,9 @@ class MainActivity : AppCompatActivity() {
             }
         }
 
+        banner_view_below.changeDuration(1200)
+        banner_view_below.startScroll()
+
         jump_to_banner.setOnClickListener {
             val intent = Intent(this@MainActivity,BannerActivity::class.java)
             startActivity(intent)

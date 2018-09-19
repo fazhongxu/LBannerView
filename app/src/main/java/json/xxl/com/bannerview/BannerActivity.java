@@ -95,6 +95,7 @@ public class BannerActivity extends AppCompatActivity {
                 });
             }
         });
+        belowBannerView.startScroll();
 
         findViewById(R.id.jump_to_kotlin).setOnClickListener(new View.OnClickListener() {
             @Override

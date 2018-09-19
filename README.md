@@ -193,6 +193,16 @@
         }
 ```
 
+
+#### 
+
+自动轮播 belowBannerView.startScroll();
+改变轮播 速度 banner_view_below.changeDuration(1200)
+
+#### 不用调用代码停止轮播，不用担心内存泄漏问题，已经自动处理好了，详情看源码
+
+### 用的上就麻烦给个 star 吧
+
 ### 效果图
 
 

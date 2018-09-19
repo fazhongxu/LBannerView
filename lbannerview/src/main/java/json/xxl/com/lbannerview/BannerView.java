@@ -132,6 +132,14 @@ public class BannerView extends RelativeLayout {
         typedArray.recycle();
     }
 
+    /**
+     * 改变速率
+     * @param duration
+     */
+    public void changeDuration(int duration) {
+        mBannerViewPager.changeScrollDuration(duration);
+    }
+
 
     /**
      * 设置Adapter
@@ -242,7 +250,7 @@ public class BannerView extends RelativeLayout {
     /**
      * 获取点的位置
      */
-    public int getDotGravity() {
+    private int getDotGravity() {
         switch (mDotGravity) {
             case 0:
                 return Gravity.CENTER;
