@@ -1,5 +1,6 @@
 package json.xxl.com.bannerview
 
+import android.content.Intent
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
@@ -59,6 +60,12 @@ class MainActivity : AppCompatActivity() {
 
                 })
             }
+        }
+
+        jump_to_banner.setOnClickListener {
+            val intent = Intent(this@MainActivity,BannerActivity::class.java)
+            startActivity(intent)
+            finish()
         }
 
 

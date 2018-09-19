@@ -11,10 +11,28 @@
         
 #### 自定义属性含义
 
-    property | means
-    
-    
-    
+        app:bottomColor="@color/transparent"   //底部遮罩 背景颜色
+        
+        app:dotGravity="center"         //小点位置  中间 左边 右边
+       
+        app:dotIndicatorFocus="@color/colorPrimary" // 当前选中点的颜色
+       
+        app:dotIndicatorNormal="@color/colorGray"   // 未选中的点的颜色
+       
+        app:widthProportion="8"                     //设置宽高比时 宽度比例值
+       
+        app:heightProportion="3"                    //设置宽高比时 高度比例值
+       
+        app:bulge="true"                            //是否时两边突出的模式
+        
+        app:bulgeDistance="30"                      // 两边显示突出的距离
+        
+        app:bottomType="belowPic"                   // 底部整体小点在轮播控件里面的位置，是底部覆盖在轮播图上，还是在轮播图下方
+       
+        app:dotSize="10dp"                          //小点之间的间距
+
+
+
 ### Dependency
 
 #### Step 1. Add the JitPack repository to your build file
@@ -31,7 +49,8 @@
 
 ```
     dependencies {
-       	        依赖库在调试
+       	     implementation 'com.github.fazhongxu:LBannerView:v0.1.5'
+
 	}
 ```
 
@@ -55,6 +74,124 @@
         app:bottomType="belowPic"
         app:dotSize="10dp" />
         
+        
+#### 代码里面使用
+
+#### Java方式
+
+```
+   final BannerView bannerView = findViewById(R.id.banner_view);
+        final BannerView belowBannerView = findViewById(R.id.banner_view_below);
+
+        bannerView.setAdapter(new BannerAdapter() {
+            @Override
+            public View getView(int position, View convertView) {
+                ImageView imageView = new ImageView(BannerActivity.this);
+                Glide.with(BannerActivity.this).load(bannberPictures[position]).into(imageView);
+                return imageView;
+            }
+
+            @Override
+            public int getCount() {
+                return bannberPictures.length;
+            }
+            @Override
+            public String getBannerDes(int position) {
+                return bannerDes[position];
+            }
+        });
+
+        // 如果 布局文件里面设置了  app:widthProportion="8"  app:heightProportion="3"  宽高比 不是直接固定的高度
+       /* bannerView.post(new Runnable() {   // post 方式
+            @Override
+            public void run() {
+                bannerView.setAdapter(new BannerAdapter() {
+                    @Override
+                    public View getView(int position, View convertView) {
+                        ImageView imageView = new ImageView(BannerActivity.this);
+                        Glide.with(BannerActivity.this).load(bannberPictures[position]).into(imageView);
+                        return imageView;
+                    }
+
+                    @Override
+                    public int getCount() {
+                        return bannberPictures.length;
+                    }
+
+                    @Override
+                    public String getBannerDes(int position) {
+                        return bannerDes[position];
+                    }
+                });
+            }
+        });
+        */
+        belowBannerView.post(new Runnable() {  // 如果布局里宽高比例没设置 是直接写死的高度 则不用post延时
+            @Override
+            public void run() {
+                belowBannerView.setAdapter(new BannerAdapter() {   //指示点在banner图片下方 左右两边设置突出
+                    @Override
+                    public View getView(int position, View convertView) {
+                        ImageView imageView = new ImageView(BannerActivity.this);
+                        Glide.with(BannerActivity.this).load(bannberPictures[position]).into(imageView);
+                        return imageView;
+                    }
+
+                    @Override
+                    public int getCount() {
+                        return bannberPictures.length;
+                    }
+                });
+            }
+        });
+```
+
+
+#### kotlin 方式
+
+```
+ banner_view.post {  // //设置了宽高比 所以需要post 否则拿不到宽度 显示不出图片 或则显示的图片高度不对
+            kotlin.run {
+                banner_view.setAdapter(object : BannerAdapter(){
+                    override fun getView(position: Int, convertView: View?): View {
+                        val imageView  = ImageView(this@MainActivity)
+                        Glide.with(this@MainActivity)
+                                .load(bannberPictures.get(position))
+                                .into(imageView)
+                        return imageView
+                    }
+
+                    override fun getCount(): Int {
+                        return bannberPictures.size
+                    }
+
+                    override fun getBannerDes(position: Int): String {
+                        return bannerDes.get(position)
+                    }
+
+                })
+            }
+
+        }
+
+        banner_view_below.post{
+            kotlin.run {
+                banner_view_below.setAdapter(object : BannerAdapter() {
+                    override fun getView(position: Int, convertView: View?): View {
+                        val imageView = ImageView(this@MainActivity)
+                        Glide.with(this@MainActivity)
+                                .load(bannberPictures.get(position))
+                                .into(imageView)
+                        return imageView
+                    }
+                    override fun getCount(): Int {
+                        return bannberPictures.size
+                    }
+
+                })
+            }
+        }
+```
 
 ### 效果图
 

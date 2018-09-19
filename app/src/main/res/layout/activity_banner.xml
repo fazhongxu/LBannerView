@@ -9,14 +9,12 @@
     <json.xxl.com.lbannerview.BannerView
         android:id="@+id/banner_view"
         android:layout_width="match_parent"
-        android:layout_height="0dp"
+        android:layout_height="140dp"
         app:bottomColor="@drawable/shape_item_divider"
         app:dotGravity="right"
         app:dotIndicatorFocus="@color/colorPrimary"
         app:dotIndicatorNormal="@color/colorGray"
         app:bulge="false"
-        app:widthProportion="8"
-        app:heightProportion="3"
         app:bottomType="coverPic"
         app:dotSize="10dp" />
 
@@ -38,9 +36,9 @@
         app:dotSize="10dp" />
 
     <Button
-        android:id="@+id/jump_to_banner"
+        android:id="@+id/jump_to_kotlin"
         android:layout_width="wrap_content"
-        android:text="click to java"
+        android:text="click to Kotlin"
         android:layout_gravity="center"
         android:layout_height="wrap_content" />
 </LinearLayout>
