@@ -1,22 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:orientation="vertical">
+    android:layout_height="match_parent">
 
     <!--小点覆盖在图片上-->
     <json.xxl.com.lbannerview.BannerView
         android:id="@+id/banner_view"
         android:layout_width="match_parent"
-        android:layout_height="140dp"
+        android:layout_height="143dp"
         app:bottomColor="@drawable/shape_item_divider"
+        app:bottomType="coverPic"
+        app:bulge="false"
         app:dotGravity="right"
         app:dotIndicatorFocus="@color/colorPrimary"
         app:dotIndicatorNormal="@color/colorGray"
-        app:bulge="false"
-        app:bottomType="coverPic"
-        app:dotSize="10dp" />
+        app:dotSize="10dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintLeft_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <!--小点在图片下方-->
     <json.xxl.com.lbannerview.BannerView
@@ -25,7 +27,10 @@
         android:layout_width="match_parent"
         android:layout_height="0dp"
         app:bottomColor="@color/transparent"
+        app:layout_constraintTop_toBottomOf="@+id/banner_view"
         app:dotGravity="center"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
         app:dotIndicatorFocus="@color/colorPrimary"
         app:dotIndicatorNormal="@color/colorGray"
         app:widthProportion="8"
@@ -40,5 +45,8 @@
         android:layout_width="wrap_content"
         android:text="click to Kotlin"
         android:layout_gravity="center"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/banner_view_below"
         android:layout_height="wrap_content" />
-</LinearLayout>
+</android.support.constraint.ConstraintLayout>
