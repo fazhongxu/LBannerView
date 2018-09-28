@@ -30,6 +30,8 @@
         app:bottomType="belowPic"                   // 底部整体小点在轮播控件里面的位置，是底部覆盖在轮播图上，还是在轮播图下方
        
         app:dotSize="10dp"                          //小点之间的间距
+        
+        app:pictureSpacing="10"                     // 两边突出时 两张图片之间的间隔距离 可以不用设置 默认值是10
 
 
 
@@ -70,6 +72,7 @@
         app:widthProportion="8"
         app:heightProportion="3"
         app:bulge="true"
+        app:pictureSpacing="10"
         app:bulgeDistance="30"
         app:bottomType="belowPic"
         app:dotSize="10dp" />

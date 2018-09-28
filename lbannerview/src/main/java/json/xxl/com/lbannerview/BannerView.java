@@ -42,6 +42,7 @@ public class BannerView extends RelativeLayout {
     private int mBulgeDistance = 25;//两边凸出距离
     private int mBottomType = 0;//小点 文字描述位置 默认底部类型是小点覆盖在图片上） 0位覆盖在图片上 1是在底部图片下方
     private boolean mScollFlag = false;//滚动标记 标记是否设置过滚动
+    private int mPictureSpacing = 10; // 两张图片之间的间距
 
     public BannerView(Context context) {
         this(context, null);
@@ -80,7 +81,7 @@ public class BannerView extends RelativeLayout {
             LayoutParams layoutParams = (LayoutParams) mBannerViewPager.getLayoutParams();
             layoutParams.setMargins(dip2px(mBulgeDistance), 0, dip2px(mBulgeDistance), 0);
             mBannerViewPager.setLayoutParams(layoutParams);
-            mBannerViewPager.setPageMargin(10);//ViewPager页面之间的距离
+            mBannerViewPager.setPageMargin(mPictureSpacing);//ViewPager页面之间的距离
         }
 
         //手先判断是否是shape等drawable文件作为底部容器的背景，有的话就优先使用，没有的话判断是否传入了颜色值
@@ -126,6 +127,7 @@ public class BannerView extends RelativeLayout {
         //获取自定义属性，宽高比
         mWidthProportion = (int) typedArray.getFloat(R.styleable.BannerView_widthProportion, mWidthProportion);
         mHeightProportion = (int) typedArray.getFloat(R.styleable.BannerView_heightProportion, mHeightProportion);
+        mPictureSpacing = (int) typedArray.getFloat(R.styleable.BannerView_pictureSpacing, mPictureSpacing);
         mBulge = typedArray.getBoolean(R.styleable.BannerView_bulge, mBulge);
         mBulgeDistance = typedArray.getInteger(R.styleable.BannerView_bulgeDistance, mBulgeDistance);
         mBottomType = typedArray.getInt(R.styleable.BannerView_bottomType, mBottomType);

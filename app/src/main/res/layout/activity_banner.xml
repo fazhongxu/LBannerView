@@ -36,7 +36,8 @@
         app:widthProportion="8"
         app:heightProportion="3"
         app:bulge="true"
-        app:bulgeDistance="30"
+        app:pictureSpacing="10"
+        app:bulgeDistance="40"
         app:bottomType="belowPic"
         app:dotSize="10dp" />
 

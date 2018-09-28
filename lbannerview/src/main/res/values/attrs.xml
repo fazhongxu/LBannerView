@@ -35,5 +35,7 @@
             <!--底部在图片下方-->
             <enum name="belowPic" value="1"/>
         </attr>
+        <!--两张图片之间的间距-->
+        <attr name="pictureSpacing" format="float"/>
     </declare-styleable>
 </resources>
