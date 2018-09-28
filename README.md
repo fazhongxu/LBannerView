@@ -51,7 +51,7 @@
 
 ```
     dependencies {
-       	     implementation 'com.github.fazhongxu:LBannerView:v0.1.6'
+       	     implementation 'com.github.fazhongxu:LBannerView:v0.1.7'
 
 	}
 ```
