@@ -224,4 +224,11 @@
 <img src="https://github.com/fazhongxu/IBannerView/blob/master/images/screenshot_below.png" width="50%" height="50%" margin:0 auto>
 
 
+### 自定义小点样式
+
+<img src="https://github.com/fazhongxu/LBannerView/blob/master/images/custom_pic_dot.png" width="50%" height="50%" margin:0 auto>
+
+
+
+
 ### 用的上就麻烦给个 star 吧
