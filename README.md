@@ -15,7 +15,7 @@
         
         app:dotGravity="center"         //小点位置  中间 左边 右边
        
-        app:dotIndicatorFocus="@color/colorPrimary" // 当前选中点的颜色
+        app:dotIndicatorFocus="@color/colorPrimary" // 当前选中点的颜色 或者 任意drawable/mipmap资源(自定义样式的指示器)
        
         app:dotIndicatorNormal="@color/colorGray"   // 未选中的点的颜色
        
@@ -33,6 +33,13 @@
         
         app:pictureSpacing="10"                     // 两边突出时 两张图片之间的间隔距离 可以不用设置 默认值是10
 
+
+        //如果指示器不是圆点
+        设置自定义图片作为指示器选中圆点和为选中圆点
+
+        app:dotIndicatorFocus="@drawable/ic_favorite_border"
+
+        app:dotIndicatorNormal="@drawable/ic_favorite"
 
 
 ### Dependency
