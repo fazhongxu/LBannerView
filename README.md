@@ -58,7 +58,7 @@
 
 ```
     dependencies {
-       	     implementation 'com.github.fazhongxu:LBannerView:v0.1.7'
+       	     implementation 'com.github.fazhongxu:LBannerView:v0.1.8'
 
 	}
 ```
@@ -207,6 +207,8 @@
 ```
 
 #### 备注 依赖的 implementation 'com.github.fazhongxu:LBannerView:v0.1.6' 必须大于 v0.1.6 ,v0.1.6 作者在调试开源依赖 v0.1.6 是第一个完整的可用的版本
+
+#### v0.1.8 添加无限左滑功能
 
 #### 
 
