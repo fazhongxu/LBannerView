@@ -25,6 +25,7 @@ public class BannerViewPager extends ViewPager {
     private long SCROLL_DELAY = 5 * 1000;
     private BannerScroller mBannerScroller;
     private List<View> mConvertViews;//界面复用
+    private static final int START_INDEX = 214748; // 2147483647
 
 
     private Handler mHandler = new Handler() {
@@ -64,6 +65,7 @@ public class BannerViewPager extends ViewPager {
         this.mAdapter = adapter;//对象Adapter设计模式
         mConvertViews = new ArrayList<>();
         setAdapter(new BannerViewAdapter());
+        setCurrentItem(START_INDEX);
     }
 
     /**
